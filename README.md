@@ -1,0 +1,4 @@
+# Template Project
+
+- Jest
+- TypeScript

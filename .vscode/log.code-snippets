@@ -1,0 +1,36 @@
+{
+	"console.log()": {
+		"description": "Log output to console",
+		"scope": "javascript,typescript",
+		"prefix": "cons",
+		"body": "console.log($0)"
+	},
+	"console.error()": {
+		"description": "Log error to console",
+		"scope": "javascript,typescript",
+		"prefix": "conserror",
+		"body": "console.error($0)"
+	},
+	"console.group()": {
+		"description": "Create a console group",
+		"scope": "javascript,typescript",
+		"prefix": "consgroup",
+		"body": [
+			"console.group()",
+			"$0",
+			"console.groupEnd()",
+		]
+	},
+	"console.info()": {
+		"description": "Log info to console",
+		"scope": "javascript,typescript",
+		"prefix": "consinfo",
+		"body": "console.info($0)"
+	},
+	"console.warn()": {
+		"description": "Log warning to console",
+		"scope": "javascript,typescript",
+		"prefix": "conswarn",
+		"body": "console.warn($0)"
+	}
+}

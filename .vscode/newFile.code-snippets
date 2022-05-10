@@ -1,0 +1,22 @@
+{
+	"create function": {
+		"description": "Creates a function based on the file name",
+		"scope": "typescript",
+		"prefix": "function",
+		"body": [
+			"export function ${1:$TM_FILENAME_BASE}(${2:parameters}): ${3:void} {",
+			"\t$0",
+			"}\n"
+		]
+	},
+	"create class": {
+		"description": "Creates a class based on the file name",
+		"scope": "typescript",
+		"prefix": "class",
+		"body": [
+			"export class ${1:$TM_FILENAME_BASE} {",
+			"\tconstructor(${2:parameters}) {$0}",
+			"}\n"
+		]
+	}
+}

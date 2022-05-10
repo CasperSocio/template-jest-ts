@@ -1,0 +1,32 @@
+{
+	"Jest describe()": {
+		"description": "Adds a describe block",
+		"scope": "javascript,typescript",
+		"prefix": "desc",
+		"body": [
+			"describe('${1:DESCRIPTION}', () => {",
+			"\t$0",
+			"})"
+		]
+	},
+	"Jest it()": {
+		"description": "Adds a test/it block",
+		"scope": "javascript,typescript",
+		"prefix": "it",
+		"body": [
+			"it('${1:DESCRIPTION}', () => {",
+			"\tconst expected: ${2|number,string|} = $3",
+			"\tconst actual: $2 = $0",
+			"\texpect(actual).toBe(expected)",
+			"})"
+		]
+	},
+	"Jest it.todo()": {
+		"description": "Adds a test/it .todo block",
+		"scope": "javascript,typescript",
+		"prefix": "itodo",
+		"body": [
+			"it.todo('$0')"
+		]
+	}
+}

@@ -1,0 +1,12 @@
+# Directories
+coverage
+dist
+lib
+node_modules
+
+# Filetypes
+.rest
+
+# Files
+.env
+package-lock.json
